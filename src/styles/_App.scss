@@ -1,0 +1,109 @@
+@import "_variables";
+
+body {
+  background-color: $primary;
+  .App {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.Navbar {
+  width: 100%;
+  box-shadow: $shadowGenerics;
+  background-color: $primary;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  .TitleNav {
+    margin-left: $marginGenerics;
+    width: 45%;
+    h3 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+    }
+  }
+  .modeButton {
+    margin-right: $marginGenerics;
+    width: 15%;
+    button {
+      border-radius: $radiusGenerics;
+      border: none;
+      background-color: $tertiary;
+      width: 80%;
+      color: rgb(0, 0, 0);
+      font-size: 15px;
+      &:hover {
+        transition: 0.5s ease;
+        background-color: rgb(235, 102, 129);
+      }
+    }
+  }
+}
+
+.Home{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    .Filter {
+        display: flex;
+        width: 100%;
+        box-shadow: $shadowGenerics;
+        background-color: $primary;
+        justify-content: center;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        .FilterSearch {
+          display: flex;
+          width: 40%;
+          margin-left: $marginGenerics;
+          border: none;
+       
+          input{
+              border: none;
+              width: 60%;
+              &:focus{
+                  transition: .5s ease;
+                  outline: none;
+                  background-color: $tertiary;
+                  border-radius: $radiusGenerics;
+              }
+          }
+          button {
+            background-color: transparent;
+            border: none;
+            margin-right: 2%;
+          }
+        }
+        .FilterByOthers {
+          width: 20%;
+          margin-right: $marginGenerics;
+          select {
+              width: 100%;
+              border: none;
+              box-shadow: $shadowGenerics;
+              background-color: transparent;
+              &:focus{
+                  transition: .5s ease;
+                  outline: none;
+              }
+          }
+        }
+      }
+      
+   .ListCountries{
+       display: flex;
+       width: 100%;
+       margin-top: 10px;
+       
+   }
+}
+
+

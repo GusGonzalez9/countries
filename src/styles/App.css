@@ -1,0 +1,105 @@
+body {
+  background-color: white;
+}
+body .App {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Navbar {
+  width: 100%;
+  box-shadow: 0px 0.5px 0px 0px #a5a5a5;
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.Navbar .TitleNav {
+  margin-left: 3%;
+  width: 45%;
+}
+.Navbar .TitleNav h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: black;
+}
+.Navbar .modeButton {
+  margin-right: 3%;
+  width: 15%;
+}
+.Navbar .modeButton button {
+  border-radius: 3px;
+  border: none;
+  background-color: #ffe0e0;
+  width: 80%;
+  color: black;
+  font-size: 15px;
+}
+.Navbar .modeButton button:hover {
+  transition: 0.5s ease;
+  background-color: #eb6681;
+}
+
+.Home {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+}
+.Home .Filter {
+  display: flex;
+  width: 100%;
+  box-shadow: 0px 0.5px 0px 0px #a5a5a5;
+  background-color: white;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+.Home .Filter .FilterSearch {
+  display: flex;
+  width: 40%;
+  margin-left: 3%;
+  border: none;
+}
+.Home .Filter .FilterSearch input {
+  border: none;
+  width: 60%;
+}
+.Home .Filter .FilterSearch input:focus {
+  transition: 0.5s ease;
+  outline: none;
+  background-color: #ffe0e0;
+  border-radius: 3px;
+}
+.Home .Filter .FilterSearch button {
+  background-color: transparent;
+  border: none;
+  margin-right: 2%;
+}
+.Home .Filter .FilterByOthers {
+  width: 20%;
+  margin-right: 3%;
+}
+.Home .Filter .FilterByOthers select {
+  width: 100%;
+  border: none;
+  box-shadow: 0px 0.5px 0px 0px #a5a5a5;
+  background-color: transparent;
+}
+.Home .Filter .FilterByOthers select:focus {
+  transition: 0.5s ease;
+  outline: none;
+}
+.Home .ListCountries {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,4 +1,5 @@
 @import "_variables";
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 body {
   background-color: $primary;
@@ -22,10 +23,11 @@ body {
   .TitleNav {
     margin-left: $marginGenerics;
     width: 45%;
+    
     h3 {
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 20px;
-      color: rgb(0, 0, 0);
+      font-family: 'Itim', cursive;
+            font-size: 23px;
+      color: rgba(0, 0, 0, 0.74);
     }
   }
   .modeButton {
@@ -36,8 +38,9 @@ body {
       border: none;
       background-color: $tertiary;
       width: 80%;
-      color: rgb(0, 0, 0);
+      color: $colorLetras;
       font-size: 15px;
+      font-family: 'Itim', cursive;
       &:hover {
         transition: 0.5s ease;
         background-color: rgb(235, 102, 129);
@@ -50,6 +53,8 @@ body {
     display: flex;
     width: 90%;
     flex-direction: column;
+    align-content: space-between;
+    align-items: center;
     .Filter {
         display: flex;
         width: 100%;
@@ -62,13 +67,15 @@ body {
         height: 40px;
         .FilterSearch {
           display: flex;
-          width: 40%;
+          width: 60%;
           margin-left: $marginGenerics;
           border: none;
        
           input{
               border: none;
-              width: 60%;
+              width: 40%;
+              font-family: 'Itim', cursive;
+              font-size: 100%;
               &:focus{
                   transition: .5s ease;
                   outline: none;
@@ -90,6 +97,8 @@ body {
               border: none;
               box-shadow: $shadowGenerics;
               background-color: transparent;
+              font-family: 'Itim', cursive;
+              font-size: 15px;
               &:focus{
                   transition: .5s ease;
                   outline: none;
@@ -102,8 +111,80 @@ body {
        display: flex;
        width: 100%;
        margin-top: 10px;
+       flex-wrap: wrap;
+       justify-content: space-around;
        
+       .CountryCard{
+         display: flex;
+         margin-top: 10px;     
+         flex-direction: column;
+         width: 250px;
+         background-color: $primary;
+         box-shadow: $shadowGenerics;
+         border-radius: $radiusGenerics;
+         height: 290px;
+         .CardImg{
+           width: 100%;
+           height: 65%;
+           
+           img{
+            position: inherit;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px 8px 0 0;
+           }
+         }
+         .ContentCard{
+           width: 100%;
+           height: 40%;
+           margin: $marginGenerics;
+           h4{
+             margin-top: 0;
+             font-family: 'Itim', cursive;
+             font-size: 15px;
+           }
+           .CardDescription{
+             display: flex;
+             flex-direction: column;
+             justify-content: space-around;
+             align-items: flex-start;
+             p{
+               margin: 0;
+               font-family: 'Itim', cursive;
+               color:$colorLetras
+               span{
+                font-family: 'Itim', cursive;
+                color: rgba(0, 0, 0, 0.795);
+               }
+             }
+           
+           }
+         }
+       }
    }
 }
 
 
+@media (max-width: 823px) {
+ .Home .Filter {
+      display:flex;
+      height: 60px;
+      align-items: flex-start;
+      flex-direction: column;
+      .FilterSearch{
+        width: 100%;
+        margin-left: 5px;
+        input{
+          width: 60%;
+        }
+       
+      }
+      .FilterByOthers{
+        width: 80%;
+        margin-left: 40px;
+        select{
+          width: 180px;
+        }
+      }
+  }
+}

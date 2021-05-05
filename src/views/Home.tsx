@@ -11,7 +11,7 @@ export default function Home(){
         async function getCountries() {
            let {data} = await axios.get(baseUri)
 
-           setCountries(data.slice(0,10))
+           setCountries(data.slice(10,22))
         }
         getCountries()
     },[])

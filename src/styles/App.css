@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 body {
   background-color: white;
 }
@@ -24,9 +25,9 @@ body .App {
   width: 45%;
 }
 .Navbar .TitleNav h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
-  color: black;
+  font-family: "Itim", cursive;
+  font-size: 23px;
+  color: rgba(0, 0, 0, 0.74);
 }
 .Navbar .modeButton {
   margin-right: 3%;
@@ -39,6 +40,7 @@ body .App {
   width: 80%;
   color: black;
   font-size: 15px;
+  font-family: "Itim", cursive;
 }
 .Navbar .modeButton button:hover {
   transition: 0.5s ease;
@@ -49,6 +51,8 @@ body .App {
   display: flex;
   width: 90%;
   flex-direction: column;
+  align-content: space-between;
+  align-items: center;
 }
 .Home .Filter {
   display: flex;
@@ -63,13 +67,15 @@ body .App {
 }
 .Home .Filter .FilterSearch {
   display: flex;
-  width: 40%;
+  width: 60%;
   margin-left: 3%;
   border: none;
 }
 .Home .Filter .FilterSearch input {
   border: none;
-  width: 60%;
+  width: 40%;
+  font-family: "Itim", cursive;
+  font-size: 100%;
 }
 .Home .Filter .FilterSearch input:focus {
   transition: 0.5s ease;
@@ -91,6 +97,8 @@ body .App {
   border: none;
   box-shadow: 0px 0.5px 0px 0px #a5a5a5;
   background-color: transparent;
+  font-family: "Itim", cursive;
+  font-size: 15px;
 }
 .Home .Filter .FilterByOthers select:focus {
   transition: 0.5s ease;
@@ -100,6 +108,74 @@ body .App {
   display: flex;
   width: 100%;
   margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Home .ListCountries .CountryCard {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  width: 250px;
+  background-color: white;
+  box-shadow: 0px 0.5px 0px 0px #a5a5a5;
+  border-radius: 3px;
+  height: 290px;
+}
+.Home .ListCountries .CountryCard .CardImg {
+  width: 100%;
+  height: 65%;
+}
+.Home .ListCountries .CountryCard .CardImg img {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.Home .ListCountries .CountryCard .ContentCard {
+  width: 100%;
+  height: 40%;
+  margin: 3%;
+}
+.Home .ListCountries .CountryCard .ContentCard h4 {
+  margin-top: 0;
+  font-family: "Itim", cursive;
+  font-size: 15px;
+}
+.Home .ListCountries .CountryCard .ContentCard .CardDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.Home .ListCountries .CountryCard .ContentCard .CardDescription p {
+  margin: 0;
+  font-family: "Itim", cursive;
+  color: black span;
+  color-font-family: "Itim", cursive;
+  color-color: rgba(0, 0, 0, 0.795);
+}
+
+@media (max-width: 823px) {
+  .Home .Filter {
+    display: flex;
+    height: 60px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .Home .Filter .FilterSearch {
+    width: 100%;
+    margin-left: 5px;
+  }
+  .Home .Filter .FilterSearch input {
+    width: 60%;
+  }
+  .Home .Filter .FilterByOthers {
+    width: 80%;
+    margin-left: 40px;
+  }
+  .Home .Filter .FilterByOthers select {
+    width: 180px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

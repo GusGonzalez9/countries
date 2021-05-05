@@ -2,9 +2,7 @@ import logo from '../loupe.png'
 import {FilterProps} from '../interfaces/FilterProps'
 
 export default function FilterSearch(props:FilterProps) {
-    const filterSearch = (value:string) =>{
 
-    }
     return (
       
             <div className="FilterSearch">

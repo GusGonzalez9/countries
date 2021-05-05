@@ -1,4 +1,5 @@
-import React,{useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
+import CountriesCards from './CountriesCards'
 import axios from 'axios'
 import {querySingleCountry} from '../queries/queries'
 export default function SingleCountry(props:any)  {
@@ -17,6 +18,7 @@ export default function SingleCountry(props:any)  {
     return (
         console.log(country),
     <div>
-        <h1>Vista de un pais</h1>
+
+        <CountriesCards country={country}/>
     </div>)
 }
